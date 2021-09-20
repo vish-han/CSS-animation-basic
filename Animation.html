@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+
+            width: 100vw;
+            height: 100vh;
+            background: aqua;
+
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            background: red;
+            display: flex;
+            color: white;
+            justify-content: center;
+            
+            animation-name:widthAnimation ;
+animation-duration: 1s;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+animation-delay: 1ms;
+animation-direction: reverse;
+      
+}
+        @keyframes widthAnimation{
+            from{
+                width: 150px;
+                height: 150px;
+            background: red;
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                background: khaki;
+            }
+        }
+        @keyframes background{
+            from{background: red;}
+            to {background: blue;}
+        }
+         
+         </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is Vishal</div>
+    </div>
+</body>
+</html>
